@@ -2,311 +2,88 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nexcore Technologies</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0b1c2c;color:#fff}
+header{background:#071521;padding:15px;text-align:center;position:sticky;top:0}
+header h1{color:#00eaff}
+nav a{color:#fff;margin:0 10px;text-decoration:none}
 
-html { scroll-behavior: smooth; }
+.hero{padding:80px;text-align:center}
+.btn{padding:10px 20px;background:#00eaff;color:#000;text-decoration:none;border-radius:5px}
 
-body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  color:white;
-  background:#0b1c2c;
-}
+.section{padding:50px;text-align:center}
+.services{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{background:#112b44;padding:20px;border-radius:10px;width:250px}
 
-/* BACKGROUND */
-body::before{
-  content:"";
-  position:fixed;
-  width:100%;
-  height:100%;
-  z-index:-1;
-  background:linear-gradient(-45deg,#020617,#0f172a,#1e3a8a,#0ea5e9);
-  background-size:400% 400%;
-  animation:bg 12s ease infinite;
-}
+input,textarea{width:100%;padding:10px;margin:10px 0;border:none;border-radius:5px}
+button{padding:10px 20px;background:#00eaff;border:none;border-radius:5px;cursor:pointer}
 
-@keyframes bg{
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
+footer{text-align:center;padding:20px;background:#071521}
 
-/* NAV */
-nav{
-  position:sticky;
-  top:0;
-  background:rgba(0,0,0,0.85);
-  padding:15px 30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo-sign{
-  font-family:'Great Vibes',cursive;
-  font-size:30px;
-  color:#00eaff;
-}
-
-.nav-links a{
-  margin-left:20px;
-  text-decoration:none;
-  color:white;
-}
-.nav-links a:hover{ color:#00eaff; }
-
-/* HERO */
-.hero{
-  padding:80px 20px;
-  text-align:center;
-}
-
-.logo{
-  font-size:60px;
-  font-family:'Orbitron';
-  color:#00eaff;
-  text-shadow:0 0 20px #00eaff;
-}
-
-/* SERVICES */
-.container{ padding:30px; text-align:center; }
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:12px;
-  overflow:hidden;
-  backdrop-filter:blur(8px);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 0 20px rgba(0,234,255,0.3);
-}
-
-.card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-
-.card h3{ color:#00eaff; }
-
-.card p{
-  font-size:13px;
-  padding:0 10px;
-  color:#cbd5e1;
-}
-
-.card button{
-  margin:10px 0 15px;
-  padding:6px 10px;
-  border:none;
-  background:#00eaff;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-/* CONTACT */
-.contact{
-  margin-top:40px;
-  padding:25px;
-  background:rgba(0,0,0,0.7);
-}
-
-.ceo{
-  color:#00eaff;
-  font-weight:900;
-}
-
-/* FLOAT BUTTONS */
-.whatsapp,.email-btn{
-  position:fixed;
-  right:20px;
-  padding:15px;
-  border-radius:50%;
-  color:white;
-}
-
-.whatsapp{ bottom:20px; background:#25D366; }
-.email-btn{ bottom:80px; background:#ea4335; }
-
-/* MODAL */
-#modal{
-  display:none;
-  position:fixed;
-  top:0; left:0;
-  width:100%; height:100%;
-  background:rgba(0,0,0,0.8);
-  justify-content:center;
-  align-items:center;
-}
-
-.modal-box{
-  background:#0f172a;
-  padding:20px;
-  width:300px;
-  border-radius:10px;
-}
-
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px;border-radius:50px;text-decoration:none}
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
+<header>
+<h1>Nexcore Technologies</h1>
 <nav>
-  <div class="logo-sign">Nexcore</div>
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </nav>
+</header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <h1 class="logo">NEXCORE TECHNOLOGIES</h1>
+<section class="hero">
+<h2>CCTV, AC & IT Services</h2>
+<p>Professional services in Lahore</p>
+<a href="#contact" class="btn">Contact Now</a>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="container">
+<section class="section" id="services">
 <h2>Our Services</h2>
-
 <div class="services">
-
-<div class="card">
-<img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg">
-<h3>Internet Solutions</h3>
-<p>High-speed internet setup and troubleshooting.</p>
-<button onclick="openModal('Internet Solutions','We provide internet setup, troubleshooting and stable connectivity solutions.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/2881232/pexels-photo-2881232.jpeg">
-<h3>Router Setup</h3>
-<p>Secure WiFi configuration.</p>
-<button onclick="openModal('Router Setup','We configure routers and optimize WiFi performance.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg">
-<h3>Network Switches</h3>
-<p>Office networking systems.</p>
-<button onclick="openModal('Network Switches','We install and manage network switches for offices.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg">
-<h3>CCTV Security</h3>
-<p>Surveillance systems.</p>
-<button onclick="openModal('CCTV','We install CCTV cameras and monitoring systems.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg">
-<h3>Cyber Security</h3>
-<p>System protection.</p>
-<button onclick="openModal('Cyber Security','We protect systems from cyber threats and attacks.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg">
-<h3>Website Development</h3>
-<p>Modern websites.</p>
-<button onclick="openModal('Website Development','We build modern responsive websites.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg">
-<h3>Software Installation</h3>
-<p>All software setup.</p>
-<button onclick="openModal('Software Installation','We install and configure all types of software.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg">
-<h3>IT Support</h3>
-<p>Technical support.</p>
-<button onclick="openModal('IT Support','We provide on-site and remote IT support.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/267614/pexels-photo-267614.jpeg">
-<h3>Cloud Services</h3>
-<p>Cloud storage solutions.</p>
-<button onclick="openModal('Cloud Services','We offer cloud storage and backup solutions.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg">
-<h3>System Maintenance</h3>
-<p>System optimization.</p>
-<button onclick="openModal('System Maintenance','We maintain and optimize systems.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg">
-<h3>Cat6 D-Link</h3>
-<p>Network cabling.</p>
-<button onclick="openModal('Cat6 Cabling','We provide professional Cat6 network wiring.')">Read More</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0">
-<h3>Telephone Exchange</h3>
-<p>PBX systems.</p>
-<button onclick="openModal('Telephone Exchange','We install telephone exchange systems for offices.')">Read More</button>
-</div>
-
+<div class="card"><h3>📹 CCTV Installation</h3><p>Camera setup for home & office</p></div>
+<div class="card"><h3>❄ AC Services</h3><p>Repair & installation</p></div>
+<div class="card"><h3>💻 IT Support</h3><p>Computer & networking</p></div>
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<h2>Contact</h2>
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Phone Number">
+<textarea placeholder="Your Message"></textarea>
+<button onclick="sendToWhatsApp()">Send via WhatsApp</button>
 <p>Phone: 03045149345</p>
-<p>Email: umermughal6714@gmail.com</p>
-<div class="ceo">CEO: UMER MUGHAL</div>
+<p>Address: Nishter Colony Street 12 near Dr Shahid Malik</p>
 </section>
 
-<footer>© 2026 Nexcore Technologies</footer>
+<footer>
+<p>© 2026 Nexcore Technologies | Chief Executive Officer: Umer Mughal</p>
+</footer>
 
-<!-- FLOAT -->
-<a class="email-btn" href="mailto:umermughal6714@gmail.com"><i class="fas fa-envelope"></i></a>
-<a class="whatsapp" href="https://wa.me/923045149345"><i class="fab fa-whatsapp"></i></a>
-
-<!-- MODAL -->
-<div id="modal">
-  <div class="modal-box">
-    <h3 id="mTitle"></h3>
-    <p id="mText"></p>
-    <button onclick="closeModal()">Close</button>
-  </div>
-</div>
+<a href="https://wa.me/923045149345" class="whatsapp">WhatsApp</a>
 
 <script>
-function openModal(title,text){
-  document.getElementById('mTitle').innerText=title;
-  document.getElementById('mText').innerText=text;
-  document.getElementById('modal').style.display='flex';
-}
+function sendToWhatsApp(){
+  let name = document.querySelector('input[placeholder="Your Name"]').value;
+  let phone = document.querySelector('input[placeholder="Phone Number"]').value;
+  let message = document.querySelector('textarea').value;
 
-function closeModal(){
-  document.getElementById('modal').style.display='none';
+  let url = "https://wa.me/923045149345?text="
+  + "Name: " + name + "%0a"
+  + "Phone: " + phone + "%0a"
+  + "Message: " + message;
+
+  window.open(url, '_blank');
 }
 </script>
 
